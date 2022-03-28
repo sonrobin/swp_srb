@@ -20,7 +20,7 @@
       <a class="nav-link" href="/dev/hello.php">헬로월드</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="/dev/index.php">머하지?</a>
+      <a class="nav-link" href="/dev/find.php">검색</a>
     </li>
   </ul>
 </nav>

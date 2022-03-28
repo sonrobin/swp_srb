@@ -20,7 +20,7 @@
       <a class="nav-link" href="/dev/hello.php">헬로월드</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="/index.php">머하지?</a>
+      <a class="nav-link" href="/dev/index.php">머하지?</a>
     </li>
   </ul>
 </nav>
@@ -36,5 +36,11 @@
 </html>
 
 <?php
-    echo "Hello world";
+    $i = 1;
+
+	while($i<=100)
+	{
+		echo "hello<br/>";
+		$i++;
+	}
 ?>

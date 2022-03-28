@@ -45,7 +45,7 @@
         <input class="form-check-input" type="checkbox" name="remember">
       </label>
     </div>
-    <button type="button" onclick="movefind()">Submit</button>
+    <button type="button" class="btn btn-primary" onclick="movefind()">Submit</button>
   </form>
 </div>
 

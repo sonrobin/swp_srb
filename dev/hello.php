@@ -8,21 +8,28 @@
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 <body>
 
-<nav class="navbar navbar-expand-sm bg-light">
-  <ul class="navbar-nav">
-    <li class="nav-item">
-      <a class="nav-link" href="/">메인</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="/dev/hello.php">헬로월드</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="/dev/find.php">검색</a>
-    </li>
-  </ul>
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="/">부산경상대 손로빈</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="/">main</a></li>
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="/">3월 28일<span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="/dev/hello.php">hello.php 예제</a></li>
+          <li><a href="/dev/find.php">find.php 예제</a></li>
+        </ul>
+      </li>
+      <li><a href="/">4월 4일</a></li>
+    </ul>
+  </div>
 </nav>
 <br>
 

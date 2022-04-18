@@ -18,7 +18,7 @@
 <script>
 <?php
     function txtsaver(){
-        require './dbconfig.php'
+        require './dbconfig.php';
         $conn = new mysqli($host, $user, $pw, $dbName);
     
         /* DB 연결 확인 */

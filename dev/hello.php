@@ -10,7 +10,6 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 <body>
-
 <nav class="navbar navbar-inverse">
   <div class="container-fluid">
     <div class="navbar-header">
@@ -25,6 +24,13 @@
         </ul>
       </li>
       <li><a href="/">4월 4일</a></li>
+
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="/">4월 11일<span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="/dev/action_page.php">action_page.php 예제</a></li>
+        </ul>
+      </li>
+
     </ul>
   </div>
 </nav>

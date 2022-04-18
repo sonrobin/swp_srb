@@ -15,6 +15,28 @@
     }
 
   </script>
+<script>
+<?php
+    function txtsaver(){
+        require './dbconfig.php'
+        $conn = new mysqli($host, $user, $pw, $dbName);
+    
+        /* DB 연결 확인 */
+        if($conn){ echo "Connection established"."<br>"; }
+        else{ die( 'Could not connect: ' . mysqli_error($conn) ); }
+
+        $txt=$_POST['email'];
+        $sql = "INSERT INTO `keyword` (`keyword`) VALUES ("+$txt+") ON DUPLICATE KEY UPDATE cnt = cnt + 1";
+        $result = mysqli_query($conn, $sql);
+ 	
+        if($result) { echo "insert success!"; }
+        else { echo "failure"; }
+    
+        mysqli_close($conn);
+     }
+    
+?>
+</script>
 </head>
 <body>
 
@@ -52,9 +74,11 @@
     <input type="text" class="form-control" id="email"  name="email">
 
 
-    <button type="button" class="btn btn-primary" onclick="movefind()">Submit</button>
+    <button type="button" class="btn btn-primary" onclick="<?php txtsaver(); ?>">Submit</button>
   </form>
 </div>
+
+
 
 </body>
 </html>
